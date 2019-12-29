@@ -48,3 +48,71 @@ li[1:4]
 li.append(100)
 # average income
 average_income = sum(income)/len(income)
+
+########## Dictionary
+score = {'Sam': 90, 'Mike': 95}
+score['Claire'] = 95
+print(score)
+score['Sam']
+score.keys()
+score.values()
+
+a ** b # a^b
+
+########## Function
+def sub(x,y):
+    z = x - y
+    return z
+
+a = sub(5,3)
+print(a)
+
+def calculate_earning(buy_price, sell_price, amount=1):
+    fee_ratio = 1.425 / 1000
+    tax_ratio = 3 / 1000
+    ret = (sell_price - buy_price) * amount * 1000 * (1 - fee_ratio - tax_ratio)
+    return ret
+
+value = calculate_earning(30, 40, 2)
+print(value)
+
+########## Package
+import datetime
+datetime.datetime(1991,1,1,4,34)
+datetime.datetime.now()
+
+
+########## if statements
+buy_price = 25
+sell_price = 30
+
+if buy_price < sell_price:
+    print('make money')
+elif buy_price == sell_price:
+    print('break even')
+else:
+    print('lose money')  
+
+    
+########## for loop    
+for i in [1,2,3,4]:
+    print(i)
+
+print('-------------')
+
+for i in range(0, 4):
+    print(i)
+
+    
+########## while loop   
+for i in range(0, 5):
+    print(i)
+    
+print('-------------')
+
+i = 0
+while i < 5:
+    print(i)
+    i = i + 1
+
+
