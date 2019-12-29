@@ -18,3 +18,33 @@ stock_value = stock_price * buy_amount * 1000
 account = account + stock_value * (1 - fee_ratio - tax_ratio)
 
 
+########## String
+# use 3 " for line breaks
+s = """hello
+world"""
+print(s)
+
+s = 'hello world'
+# show the first word
+s[0]
+# shoe the lst word
+s[-1]
+# count how many the word
+s.count('l')
+# find the index of the word
+s.find('o')
+
+s + s
+
+b = "HI"
+b = b.replace('I', 'A')
+
+
+########## List
+# show [4, 5, 'i am string']
+li = [1, 4, 5, 'i am string', True]
+li[1:4]
+# add the new element as the last one
+li.append(100)
+# average income
+average_income = sum(income)/len(income)
