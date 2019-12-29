@@ -41,7 +41,7 @@ s.plot()
 # Generate a time series and replace 1 values; then plot the graph
 date = pd.date_range('2018-01-01', periods=10)
 kg_watch = pd.Series(60, index=date)
-# Important to have ":" so the chang would apply from the given date till the last date in the list
+# Important to have ":" so the chang would apply from the given date till the last day
 kg_watch.loc['2018-01-03':] += 5
 %matplotlib inline
 kg_watch.plot()
