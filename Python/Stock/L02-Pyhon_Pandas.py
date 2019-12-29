@@ -13,6 +13,20 @@ s
 s.loc['20180102':'2018-01-04'] # include '2018-01-04'
 s.iloc[0:3] # not include s.iloc[3]
 
+# functions
+s.max()
+s.min()
+s.mean()
+s.std()
+s.cumsum() 
+s.cumprod()
+
+# rolling window
+s.rolling(2).sum()
+s.rolling(2).max()
+s.rolling(2).min()
+s.rolling(2).mean()
+s.rolling(2).std()
 
 
 
