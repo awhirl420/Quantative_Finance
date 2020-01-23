@@ -47,7 +47,7 @@ def crawl_price(date):
     content = r.text.replace('=', '')
     
     lines = content.spilt('\n')
-    lines = list(filter(lambda l:len(1.split('",')) > 10, lines))
+    lines = list(filter(lambda l:len(l.split('",')) > 10, lines))
     content = "\n".join(lines)
     
     if content == '':
