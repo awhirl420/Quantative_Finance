@@ -30,3 +30,27 @@ cat.remove("Chapman")
 # 把資料加到特定槽位前面
 cat.insert(0, "Chapman")
 
+# iterate
+fav_movie = ["The Holy Grail", "The Life of Brian"]
+
+# 用while: 不建議
+count = 0
+while count < len(fav_movie):
+    print(fav_movie[count])
+    count = count + 1
+
+# 用for
+for each_flick in fav_movie:
+    print(each_flick)
+    
+# 清單中嵌入清單
+movie = [
+    "The Holy Grail", 1975, "Terry Jone& Terry Gilliam", 91,
+    ["Graham Chapman",
+     ["Michael Palin", "John Cleee", "Terry Gilliam", "Eric Idle", "Terry Jone"]
+        
+    ]
+]
+
+print(movie[4][1][3])
+# Answer: Eric Idle
