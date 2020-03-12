@@ -54,3 +54,24 @@ movie = [
 
 print(movie[4][1][3])
 # Answer: Eric Idle
+
+# 檢查識別字是否保存特定型態的資料
+name = ['Michael', 'Terry']
+num_name = len(name)
+isinstance(name, list)
+isinstance(num_name, list)
+
+# 顯示清單中的清單
+
+movie = [
+    "The Holy Grail", 1975, "Terry Jone& Terry Gilliam", 91,
+    ["Graham Chapman",
+     ["Michael Palin", "John Cleee", "Terry Gilliam", "Eric Idle", "Terry Jone"]
+        
+    ]
+]
+
+print(movie)
+
+for each_item in movie:
+    print(each_item)
